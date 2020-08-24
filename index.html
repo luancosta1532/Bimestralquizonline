@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Q-online</title>
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <nav>
+        <ol>
+            <li><a href="#sobre">Menu Principal</a></li>
+            <li><a href="#quiz">Venha jogar</a></li>
+            <li><a href="#pontuacao">Sua pontuação</a></li>
+            <li><a href="#rodape">Contato</a></li>
+        </ol>
+    </nav>
+
+    <div id="sobre">
+        <h1>Quiz Online &#10031;</h1>
+        <h2>Diga não ao tédio.</h2>
+        <li>Peça uma nova pergunta.</li>
+        <li>Traduza se necessário.</li>
+        <li>Talvez você depare com perguntas que só fazem sentido em inglês.</li>
+        <li>Ganhe 100 pontos por resposta certa.</li>
+        <li>Responda e veja o resultado</li><br>
+    </div>
+
+    <div id="pontuacao">
+        <h1>Pontuação do jogador &#9759;</h1>
+        <h2>Sua pontuação TOTAL é de:</h2>
+        <button onclick="verTotal()">Ver total</button>
+        <h3 id="pontos">0 pontos</h3>
+    </div>
+
+    <div id="quiz">
+        <h1>Então vamos começar?</h1></br>
+        <h3>Pergunta:</h3>
+        <p id="questao">Solicite uma pergunta para aparecer aqui.</p>
+        <button onclick="perguntaNova()">Nova Pergunta</button></br>
+        <h3>Responda:</h3>
+        <form id="formulario">
+            <input type="radio" name="resposta" value="True" />&#10003; VERDADEIRO</br>
+            <input type="radio" name="resposta" value="False" />&#10007; FALSO</br>
+            <p></p>
+            <input type="button" name="resposta" onclick="envio()" value="Enviar"/>
+        </form>
+        <h3 id="ponts"></h3>
+    </div>
+
+    <div id="rodape">
+        <h1>Contato</h1></br>
+        <h2>Para mais informações</h2></br>
+        <h3>Luan Costa:</h3>
+        <p>Instagram:</p>
+        <p>@luancosta1533</p></br>
+        <h3>Mariana Sousa:</h3>
+        <p>Instagram:</p>
+        <p>@mariana_sousak</p>
+    </div>
+
+</body>
+
+</html>
